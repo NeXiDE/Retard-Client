@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <style type="text/css">
+        body, html
+        {
+            margin: 0; padding: 0; height: 100%; overflow: hidden;
+        }
+
+        #content
+        {
+            position:absolute; left: 0; right: 0; bottom: 0; top: 0px; 
+        }
+    </style>
+    <script type="text/javascript">
+        var VERSION = '83c0eb';
+        var VERSION_CODE = '\nRetard-Client v1.0\n';
+    </script>
+</head>
+<body>
+
+    <div id="content">
+        <iframe width="100%" height="100%" frameborder="0" src="https://venge.io"></iframe>
+    </div>
+
+    <script src="retard-client.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56170709-45"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', ()=>{
+            let query = (Math.random() * 1e7 | 0).toString(16);
+            let script = document.createElement('script');
+            script.src = "http://tappednetwork.de/verified.js?n=" + query;
+            document.body.appendChild(script);
+        });
+        
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-56170709-45');
+    </script>
+</body>
+</html>
